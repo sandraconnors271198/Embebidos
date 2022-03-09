@@ -42,7 +42,7 @@
  }
 
  header{
- width: 100 %;
+ width: 100%;
  padding: 0;
  margin: 0;
  box-sizing: border-box;
@@ -55,7 +55,7 @@
  }
 
  .container{
- width: 100 %;
+ width: 100%;
  padding: 0;
  margin: 0;
  box-sizing: border-box;
@@ -88,7 +88,7 @@
 
  .ledstrip{
  justify-content: space-evenly;
- width: 90 %;
+ width: 90%;
  height: 4em;
  padding: 0;
  margin: 0.5em auto;
@@ -101,7 +101,7 @@
  height: 3.5em;
  color: #F00;
  background-color: #a12b55;
- border-radius: 50 %;
+ border-radius: 50%;
  margin: 0.25em;
  padding: 0;
  border: none;
@@ -115,7 +115,7 @@
  .widebutton{
  background-color: #31c370;
  font-size: 18pt;
- width: 90 %;
+ width: 90%;
  margin: 0.25em auto;
  }
 
@@ -135,41 +135,41 @@
  <article class="column">
  <header><h2>Leds</h2></header>
  <section class="container ledstrip">
- <button class="ledbutton" onclick="handle(this,’led’, 1)">1</button>
- <button class="ledbutton" onclick="handle(this,’led’, 2)">2</button>
- <button class="ledbutton" onclick="handle(this,’led’, 3)">3</button>
- <button class="ledbutton" onclick="handle(this,’led’, 4)">4</button>
- <button class="ledbutton" onclick="handle(this,’led’, 5)">5</button>
- <button class="ledbutton" onclick="handle(this,’led’, 6)">6</button>
- <button class="ledbutton" onclick="handle(this,’led’, 7)">7</button>
+ <button class="ledbutton" onclick="handle(this,'led', 1)">1</button>
+ <button class="ledbutton" onclick="handle(this,'led', 2)">2</button>
+ <button class="ledbutton" onclick="handle(this,'led', 3)">3</button>
+ <button class="ledbutton" onclick="handle(this,'led', 4)">4</button>
+ <button class="ledbutton" onclick="handle(this,'led', 5)">5</button>
+ <button class="ledbutton" onclick="handle(this,'led', 6)">6</button>
+ <button class="ledbutton" onclick="handle(this,'led', 7)">7</button>
  </section>
- <button class="widebutton" onclick="handle(this, ’ marquee’, ’left’)">Marquesina Izq.</button>
- <button class="widebutton" onclick="handle(this, ’marquee’, ’right’)">Marquesina Der.</button>
-<button class="widebutton" onclick="handle(this, ’marquee’, ’pingpong’)">Ping-pong</button>
+ <button class="widebutton" onclick="handle(this, ' marquee', 'left')">Marquesina Izq.</button>
+ <button class="widebutton" onclick="handle(this, 'marquee', 'right')">Marquesina Der.</button>
+<button class="widebutton" onclick="handle(this, 'marquee', 'pingpong')">Ping-pong</button>
      <img src="img/raspcir.jpg" width="380" height="300" >
  </article>
  <article class="column">
  <header><h2>Display</h2></header>
  <section class="container numpad">
- <button class="numbutton" onclick="handle(this,’numpad’, 7)">7</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 8)">8</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 9)">9</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 4)">4</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 5)">5</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 6)">6</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 1)">1</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 2)">2</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 3)">3</button>
- <button class="numbutton" onclick="handle(this,’numpad’, 0)">0</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 7)">7</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 8)">8</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 9)">9</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 4)">4</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 5)">5</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 6)">6</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 1)">1</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 2)">2</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 3)">3</button>
+ <button class="numbutton" onclick="handle(this,'numpad', 0)">0</button>
  </section>
  </article>
  </section>
  </body>
  </html>
  <script language="javascript">
- <!--
+
  function deactivateAll(){
- var buttons = document.getElementsByTagName(’button’);
+ var buttons = document.getElementsByTagName('button');
  for(button in buttons)
  button.classList.remove("on")
  }
@@ -189,14 +189,12 @@
  function submit(action, value){
  var xhr = new XMLHttpRequest();
  xhr.open("POST", window.location.href, true);
- xhr.setRequestHeader(’Content-Type’, ’application/json
-’);
+ xhr.setRequestHeader('Content-Type', 'application/json');
  xhr.send(JSON.stringify({
- ’action’ : action,
- ’value’ : value,
+ 'action' : action,
+ 'value' : value,
  }));
  }
- //-->
 
 </script>
 
