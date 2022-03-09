@@ -35,7 +35,7 @@
  z-index: -1;
  opacity: 0.5;
  background-image: url("img/raspberry.jpg");
- background-repeat: repeat-x;
+ background-repeat: repeat-y;
  background-attachment: fixed;
  background-position: center;
  background-size: contain;
@@ -83,6 +83,7 @@
  font-size: inherit;
  flex: 1 0 0;
  margin: 0.25em;
+ background-color: #fb2568;
  }
 
  .ledstrip{
@@ -99,20 +100,20 @@
  width: 3.5em;
  height: 3.5em;
  color: #F00;
- background-color: #933;
+ background-color: #a12b55;
  border-radius: 50 %;
  margin: 0.25em;
  padding: 0;
  border: none;
- box-shadow: 0px 4px 5px rgba(0, 0, 0,
-);
+ box-shadow: 0px 4px 5px rgba(0, 0, 0,);
  }
 
  .ledbutton:hover{
- background-color: #F33;
+ background-color: #40d866;
  }
 
  .widebutton{
+ background-color: #31c370;
  font-size: 18pt;
  width: 90 %;
  margin: 0.25em auto;
@@ -120,12 +121,16 @@
 
  .on{
  color: #0F0;
- background-color: #3F3;
+ background-color: #a12b55;
  }
  </style>
  </head>
  <body>
  <header><h1>Panel de Control LED</h1></header>
+ <p style = "font-family:courier,arial,helvética;"><H2>
+    A continuaci&oacute;n se muestra un men&uacute; con las diferentes funcionales que podemos usar en la raspberry pi para la pr&aacute;ctica 2. 
+</H2>
+</p>
  <section class="container">
  <article class="column">
  <header><h2>Leds</h2></header>
@@ -141,6 +146,7 @@
  <button class="widebutton" onclick="handle(this, ’ marquee’, ’left’)">Marquesina Izq.</button>
  <button class="widebutton" onclick="handle(this, ’marquee’, ’right’)">Marquesina Der.</button>
 <button class="widebutton" onclick="handle(this, ’marquee’, ’pingpong’)">Ping-pong</button>
+     <img src="img/raspcir.jpg" width="380" height="300" >
  </article>
  <article class="column">
  <header><h2>Display</h2></header>
@@ -191,4 +197,8 @@
  }));
  }
  //-->
+
+</script>
+
+ 
  </script>
