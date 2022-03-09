@@ -41,7 +41,7 @@ GPIO.setup(32, GPIO.OUT, initial=GPIO.LOW)
 #Casos para encender los LEDS
 def leds(num):
         if num == 7:
-                GPIO.output(26, GPIO.HIGH) # Turn led           #Led 7
+                GPIO.output(32, GPIO.HIGH) # Turn led           #Led 7
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
                 GPIO.output(18, GPIO.LOW)  # Turn led off
@@ -50,7 +50,7 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
                 
         if num == 6:
-                GPIO.output(24, GPIO.HIGH) # Turn led        #Led 6
+                GPIO.output(26, GPIO.HIGH) # Turn led        #Led 6
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
                 GPIO.output(18, GPIO.LOW)  # Turn led off
@@ -59,7 +59,7 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
 
         if num == 5:
-                GPIO.output(22, GPIO.HIGH) # Turn led        #Led 5
+                GPIO.output(24, GPIO.HIGH) # Turn led        #Led 5
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(18, GPIO.LOW)  # Turn led off
@@ -68,7 +68,7 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
 
         if num == 4:
-                GPIO.output(18, GPIO.HIGH) # Turn led         #Led 4
+                GPIO.output(22, GPIO.HIGH) # Turn led         #Led 4
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
@@ -77,7 +77,7 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
 
         if num == 3:
-                GPIO.output(16, GPIO.HIGH) # Turn led     #Led 3
+                GPIO.output(18, GPIO.HIGH) # Turn led     #Led 3
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
@@ -86,7 +86,7 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
 
         if num == 2:
-                GPIO.output(12, GPIO.HIGH) # Turn led       #Led 2
+                GPIO.output(16, GPIO.HIGH) # Turn led       #Led 2
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
@@ -95,13 +95,13 @@ def leds(num):
                 GPIO.output(10, GPIO.LOW)  # Turn led off
 
         if num == 1:
-                GPIO.output(10, GPIO.HIGH) # Turn led    #Led 1
+                GPIO.output(12, GPIO.HIGH) # Turn led    #Led 1
                 GPIO.output(26, GPIO.LOW)  # Turn led off
                 GPIO.output(24, GPIO.LOW)  # Turn led off
                 GPIO.output(22, GPIO.LOW)  # Turn led off
                 GPIO.output(18, GPIO.LOW)  # Turn led off
                 GPIO.output(16, GPIO.LOW)  # Turn led off
-                GPIO.output(12, GPIO.LOW)  # Turn led off
+                GPIO.output(10, GPIO.LOW)  # Turn led off
         pass
 
 
